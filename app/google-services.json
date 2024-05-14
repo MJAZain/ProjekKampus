@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "805829889154",
+    "project_id": "nfc-project-d1344",
+    "storage_bucket": "nfc-project-d1344.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:805829889154:android:971f9d00db587fccc8389b",
+        "android_client_info": {
+          "package_name": "com.example.projekkampus"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6szS_gUUeQP4M-ppPrsPBo6dhN9AKwPA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:805829889154:android:f2d9cd062e149f4ec8389b",
+        "android_client_info": {
+          "package_name": "com.nfccoba2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6szS_gUUeQP4M-ppPrsPBo6dhN9AKwPA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
