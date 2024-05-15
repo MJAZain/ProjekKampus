@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <ImageButton
+            android:id="@+id/closeButton"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@android:drawable/ic_menu_close_clear_cancel"
+            android:contentDescription="Close"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            />
+
+    </RelativeLayout>
+
+    <!-- Horizontal LinearLayout to arrange ImageView and other components side by side -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:layout_margin="30sp"
+        >
+
+        <!-- ImageView for adding or selecting an image -->
+        <ImageView
+            android:id="@+id/reviewImage"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/darker_gray"
+            android:contentDescription="Click to select image"
+            android:scaleType="centerCrop"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginEnd="16dp"
+        />
+
+        <!-- Vertical LinearLayout for text inputs, rating bar, and buttons -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="16dp"
+            >
+
+            <!-- EditText for the review title -->
+            <EditText
+                android:id="@+id/reviewTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Title"
+                android:textSize="16sp"
+                android:inputType="textCapWords"
+                android:layout_marginTop="16dp"
+                android:gravity="start"
+                />
+
+            <!-- RatingBar for rating -->
+            <RatingBar
+                android:id="@+id/reviewRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:stepSize="0.5"
+                android:layout_marginTop="16dp"
+                android:layout_gravity="start"
+            />
+
+            <!-- EditText for description -->
+            <EditText
+                android:id="@+id/reviewDescription"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:hint="Write your review"
+                android:inputType="textMultiLine"
+                android:layout_marginTop="16dp"
+                android:gravity="start"
+            />
+
+            <!-- Submit button with left alignment -->
+            <Button
+                android:id="@+id/submitReviewButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:layout_gravity="start"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="32dp"
+            />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
